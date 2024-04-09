@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>
+            animation
+        </title>
+        <style type="text/css">
+            body{
+                height: 100vh;
+                position: relative;
+            }
+            .content{
+                background-color: red;
+                animation-name: colorchange;
+                animation-duration: 5s;
+               animation-delay: 2s;
+               animation-iteration-count: infinite;
+               animation-direction: reverse;
+
+                position:absolute;
+                 width: 300px;
+                 height: 300px;
+
+            }
+            @keyframes colorchange{
+                0%{
+                    background-color: red; 
+                    left: 0px;
+                    top:0px;
+                }
+                25%{
+                    background-color:black; 
+                    left: calc(100% - 300px);
+                    top:0px;
+                }
+                50%{
+                    background-color:green; 
+                    left: calc(100% - 300px);
+                    top:calc(100% - 200px);
+                }
+                75%{
+                    background-color:orange; 
+                    left: 0px;
+                    top:calc(100% - 200px);
+                }
+                100%{
+                    background-color: yellow; 
+                    left: 0px;
+                    top:0px;
+                }
+            
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="content">
+            
+            ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            
+        </div>
+    </body>
+</html>

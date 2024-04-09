@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>media quarey</title>
+<meta name="viewport" content="width=device-width initial-scale=1">
+<style>
+    
+     .body{
+       background-color: rgb(255, 47, 0);
+   }
+   .header{
+       background-color: deeppink;
+   }
+   .Content{
+       background-color: darkorange;
+       height: 1000px;
+   }
+   .Entry{
+       background-color: black;
+       color: white;
+       width: 500px;
+   }
+   .Side{
+       float: right;
+   }
+   .Sidebar{
+       background-color: black;
+       color: white;
+       height: 130px;
+       width: 500px;
+   }
+   .Footer{
+       background-color:blue; 
+   }  
+  @media screen and (min-width : 100px) {
+    .body{
+        background-color: yellow;
+        font-size: 50px;
+    }
+}
+    @media screen and (max-width : 300px) {
+        .header{
+            background-color: chartreuse;
+
+        }
+    }
+    @media screen and (min-width : 800px) {
+        
+        .Entry{
+            background-color: brown;
+        }
+        .Sidebar{
+            background-color: cyan;
+        }
+    }
+    @media screen and (max-width : 525px) {
+        .Sidebar{
+            height: 300px;
+        }
+    }
+
+ 
+     
+  
+  
+</style>
+</head>
+
+<body class="Body">
+    Page
+    <div class="Header">
+        Header
+    </div>
+    <div class="Content">
+        <div style="float: left;">
+            Content<br>
+            <div Class="Entry">Entry</div><br><br>
+            <div Class="Entry">Entry</div><br><br>
+            <div Class="Entry">Entry</div>
+        </div>
+        <div class="Side">
+            <br>
+            <div class="Sidebar"><br>Sidebar</div>
+        </div>
+        </div>
+    <div class="Footer">
+        Darshan University-Rajkot
+    </div>
+</body>
+</html>
